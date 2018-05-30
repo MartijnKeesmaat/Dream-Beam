@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<title>Axis</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Axis">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="author" content="Martijn Keesmaat">
+	<link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.min.css">
+</head>
+
+<body>
+
+	<div class="big-skewy-thing-container">
+		<div class="big-skewy-thing"></div>
+	</div>
+
+	<!-- Content -->
+	<main class="content">
+
+		<header class="header">
+			<div class="header__skew--pink"></div>
+			<div class="header__wrapper">
+				<div class="header__intro  reveal-header">
+					<img src="assets/svg/logo.svg" alt="">
+					<h1>Dream beam</h1>
+					<p>Made by Dream Team</p>
+					<div class="header__btns">
+						<button class="btn">Steun ons</button>
+						<a href="#">Contact</a>
+					</div>
+				</div>
+				<img class="header__image reveal-header" src="assets/images/DreamBeam.png" alt="">
+			</div>
+			<div class="header__skew--dark">
+				<img src="assets/images/backdrop.png" class="header__backdrop reveal-header" />
+			</div>
+			<div class="fab-center">
+				<button class="fab">
+					<a href="#instructions">
+						<img src="assets/svg/arrow.svg" alt="">
+						<div class="fab__border"></div>
+					</a>
+				</button>
+			</div>
+		</header>
+
+		<div class="skewy-thing-beneath-header"></div>
+
+		<div id="instructions">
+			<div class="reveal">
+				<video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" poster='assets/images/app.jpg' data-setup='{ "aspectRatio":"16:9", "playbackRates": [1, 1.5, 2] }'>
+					<source src="assets/movie/parachute.mp4" type='video/mp4' />
+				</video>
+			</div>
+		</div>
+
+		<div class="spotlights">
+			<div class="spotlights__image"></div>
+
+			<div class="spotlights__wrapper">
+				<div class="spotlight-container">
+
+					<div class="spotlight reveal">
+						<div class="spotlight__backdrop">
+							<div class="spotlight__backdrop__text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sint cum eveniet natus totam voluptates corrupti porro
+									vero ipsa perspiciatis, provident similique quidem quos minima blanditiis recusandae. Error, quae veniam?</p>
+							</div>
+						</div>
+
+						<div class="spotlight__text">
+							<img class="spotlight__icon" src="assets/svg/lamp.svg" alt="">
+							<h3>Natuurlijk wakker</h3>
+							<p>De Dreambeam helpt je ’s nachts natuurlijk wakker worden door middel van een warm licht.</p>
+						</div>
+
+						<div class="spotlight__img">
+							<img src="assets/images/wakey.jpg" alt="">
+						</div>
+
+						<button class="fab">
+							<a href="#">
+								<img src="assets/svg/arrow.svg" alt="">
+							</a>
+						</button>
+					</div>
+
+				</div>
+
+				<div class="spotlight-container spotlight-container--left">
+
+					<div class="spotlight reveal">
+						<div class="spotlight__backdrop">
+							<div class="spotlight__backdrop__text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sint cum eveniet natus totam voluptates corrupti porro
+									vero ipsa perspiciatis, provident similique quidem quos minima blanditiis recusandae. Error, quae veniam?</p>
+							</div>
+						</div>
+
+						<div class="spotlight__text">
+							<img class="spotlight__icon" src="assets/svg/sound.svg" alt="">
+							<h3>Geluidloos slapen</h3>
+							<p>Het wordt geplaatst boven het bed en maakt gebruik van geluiddempende golf om een net effect te creëren.</p>
+						</div>
+
+						<div class="spotlight__img">
+							<img src="assets/images/sleepey.jpg" alt="">
+						</div>
+
+						<button class="fab">
+							<a href="#">
+								<img src="assets/svg/arrow.svg" alt="">
+							</a>
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<!-- End content -->
+
+	<script src="https://vjs.zencdn.net/7.0.3/video.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="scripts/dist/main.min.js"></script>
+	<script>
+		$(function () {
+			var $refreshButton = $('#refresh');
+			var $results = $('#css_result');
+
+			function refresh() {
+				var css = $('style.cp-pen-styles').text();
+				$results.html(css);
+			}
+
+			refresh();
+			$refreshButton.click(refresh);
+
+			// Select all the contents when clicked
+			$results.click(function () {
+				$(this).select();
+			});
+		});
+
+	</script>
+
+</body>
+
+</html>
