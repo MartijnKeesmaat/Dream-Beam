@@ -4,7 +4,7 @@
 
 .btn {
   font-family: $font-body--medium;
-  background: $color-main;
+  background: $gr;
   transition: $transition1;
   box-shadow: $shadow-sm;
   border: none;
@@ -14,7 +14,8 @@
   font-size: 1.8rem;
   border-radius: 1px;
   margin-right: 18px;
-  color: #fff;
+  color: rgba(#000, 0.72);
+  box-shadow: 0, 0, 21 rgba(#46bf72, 0.21);
 
   &:last-child {
     margin-right: 0;

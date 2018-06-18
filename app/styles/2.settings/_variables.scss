@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 // Colors names
-$valencia: #ff006f;
+$valencia: #00ffd4;
 $oxford: #1c1e23;
 $charade: #282c37;
 $bayoux: #38415f;
@@ -42,6 +42,7 @@ $scrollbar-color: $color-main;
 \*------------------------------------*/
 
 // Overlay
+$gr: linear-gradient(to right, #07ce71, #4deeae);
 $overlay: rgba(#1c1e32, 0.4);
 $overlay-vertical: linear-gradient(
   to bottom,
