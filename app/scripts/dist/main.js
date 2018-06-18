@@ -2040,7 +2040,7 @@ $(document).ready(function() {
   $('.owl-carousel').owlCarousel({
     loop: true,
     nav: true,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
     center: true

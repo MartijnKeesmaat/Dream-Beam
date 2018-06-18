@@ -4,15 +4,10 @@
   position: relative
   
   .btn:hover
-    animation: pulse 1s
-    box-shadow: 0 0 0 2em rgba(#fff,0)
-
-  @keyframes pulse 
-    0% 
-      box-shadow: 0 0 0 0 rbga($color-main, .4)
+    transform: scale(1.1);
 
   &__skew--dark
-    background: #000
+    background: linear-gradient(to bottom, #292A3E, #253539, #121A1D);
     position: absolute
     width: 100%
     height: calc(100% + 20px)
@@ -38,6 +33,7 @@
     top: -270px
     right: -20px
     height: 1110px
+    opacity: .5
 
   &__wrapper
     overflow: hidden 
@@ -86,9 +82,10 @@
     font-weight: 600
 
   &__image
-    height: 520px
+    height: 490px
     position: absolute
-    right: 80px
+    right: 145px
+    top: 47px
 
   .fab-center
     display: flex
@@ -158,11 +155,11 @@
   height: 1800px
   left: -900px
   height: 100%
-  transform: skew(55deg);
-  z-index: -1;
-  left: -1000px;
-  width: 120%;
-  height: 100%;
+  transform: skew(55deg)
+  z-index: -1
+  left: -1000px
+  width: 120%
+  height: 100%
   
 .big-skewy-thing-container
   overflow: hidden
