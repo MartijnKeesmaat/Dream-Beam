@@ -1,4 +1,4 @@
-<img src="https://i.gyazo.com/48669172ce0cd5dc1a93fe3bad3261d8.gif">
+<img src="https://i.gyazo.com/48669172ce0cd5dc1a93fe3bad3261d8.gif" width="100%" height="300px">
 
 ## Docs
 
