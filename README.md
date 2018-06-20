@@ -1,4 +1,4 @@
-<img src="https://i.gyazo.com/34d940d94d627441dda057aaaa1614b3.gif" width="100%" />
+[![https://gyazo.com/1e00959c9bcdc564a9ff985a0445a2f3](https://i.gyazo.com/1e00959c9bcdc564a9ff985a0445a2f3.gif)](https://gyazo.com/1e00959c9bcdc564a9ff985a0445a2f3)
 
 
 ## Dream Beam
